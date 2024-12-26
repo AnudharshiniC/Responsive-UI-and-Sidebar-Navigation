@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One Bookmark Links for Designers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+ 
+    <style>
+        .sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #000000;
+          
+        }
+        .sidebar img {
+            max-width: 40px;
+            max-height: 40px;
+        }
+        /* Custom Scrollbar for WebKit browsers */
+.sidebar::-webkit-scrollbar {
+    width: 4px; /* Width of the scrollbar */
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #776b6b; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded edges */
+}
+
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color:goldenrod; /* Color when hovering over the scrollbar thumb */
+}
+
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #222; /* Color of the scrollbar track */
+}
+
+
+
+
+.underline-animated:hover {
+ color:goldenrod;
+  
+}
+/* Add this to your CSS file or within a <style> block in your HTML */
+
+    .hover-effect {
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.hover-effect:hover {
+    color: goldenrod !important; /* Text color on hover (Bootstrap warning color) */
+   
+   
+}
+
+/* Underline Effect */
+.a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-radius: 2px;
+    height: 2px; /* Thickness of the underline */
+    background-color:goldenrod; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth animation for width */
+}
+
+
+.a:hover::after {
+    width: 100%; /* Fully expand the underline on hover */
+}/* Link Styling */
+.underline-animated {
+    text-decoration: none; /* Remove default underline */
+    color: white;
+    position: relative; /* Position for the ::after pseudo-element */
+    display: inline-block; /* Ensure proper spacing */
+}
+
+/* Underline Effect */
+.underline-animated::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-radius: 2px;
+    height: 2px; /* Thickness of the underline */
+    background-color:goldenrod; /* Color of the underline */
+    transition: width 0.3s ease; /* Animation on hover */
+}
+
+/* Hover Effect */
+.underline-animated:hover::after {
+    width: 200px; /* Full underline on hover */
+}
+
+.li:hover::after{
+    color:goldenrod;
+}
+/* Image Hover Effect */
+.image-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover-effect:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow effect */
+}
+
+.card-title:hover{
+    color: goldenrod;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.card-text:hover{
+    color: rgb(150, 150, 148);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.i{
+    color: white;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.sticky-exit {
+    position: sticky;
+   
+}
+
+
+
+      
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <!-- Mobile Menu (Visible on small screens) -->
+    <div class="col-12 d-md-none bg-dark">
+        <nav class="navbar navbar-dark bg-dark  ">
+            <!-- Hamburger Menu Button -->
+            
+            <button class="navbar-toggler sidebarToggle  border-0 "  type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu"  
+                aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+ 
+                <span class="navbar-toggler-icon " ></span>
+            </button>
+        </nav>
+
+        <!-- Collapsible Sidebar Menu -->
+        <div class="collapse bg-dark text-white sidebar" id="mobileMenu"
+         style="position: fixed; top: 0; left: 0; height: 100%; width: 75%; overflow-y: auto; ">
+
+         <nav class="p-4 position-relative">
+
+            <!-- Exit Icon -->
+            <button class="btn border-0 position-absolute top-0 end-0 m-3 text-white sticky-exit"j data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-label="Close">
+                <i class="bi bi-x-circle-fill fs-3 text-white "></i>
+            </button>
+
+                <img src="c:/Users/ELCOT/Downloads/logo.svg" class="img-fluid mb-3" alt="Logo">
+               
+                <ul class="list-unstyled fs-6 ">
+                   
+                    <li class="p-2"><a href="All bookmark.html" class="nav-link text-white hover-effect underline-animated" >All Bookmark</a></li>
+                    <li class="p-2"><a href="design inpiration.html" class="nav-link text-white hover-effect underline-animated ">Design Inspiration</a></li>
+                    <li class="p-2"><a class="  underline-animated">Design News</a></li>
+                    <li class="p-2"><a class="  underline-animated">Design Systems</a></li>
+                    <li class="p-2"><a class="  underline-animated">YouTube Channels</a></li>
+                    <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                    <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                    <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                    <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                    <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                    <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                    <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                    <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                    <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                    <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                </ul>
+            </nav>
+        </div>
+       
+    </div>   
+   
+   
+      <div class="container-fluid ">
+               
+                <div class="row"> 
+
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-3 d-none d-md-block sidebar ">
+                <nav class="p-4">
+                    <img src="c:/Users/ELCOT/Downloads/logo.svg" class="img-fluid mb-3" alt="Logo">
+                    <ul class="list-unstyled fs-6 ">
+                       
+                        <li class="p-2"><a href="All bookmark.html" class="nav-link text-white hover-effect underline-animated" >All Bookmark</a></li>
+                        <li class="p-2"><a href="design inpiration.html" class="nav-link text-white hover-effect underline-animated ">Design Inspiration</a></li>
+                        <li class="p-2"><a class="  underline-animated">Design News</a></li>
+                        <li class="p-2"><a class="  underline-animated">Design Systems</a></li>
+                        <li class="p-2"><a class="  underline-animated">YouTube Channels</a></li>
+                        <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                        <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                        <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                        <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                        <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                        <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                        <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Free UI Resources</a></li>
+                        <li class="p-2"><a class="  underline-animated">Mockup Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Typography</a></li>
+                        <li class="p-2"><a class="  underline-animated">Gradient Tools</a></li>
+                        <li class="p-2"><a class="  underline-animated">Animation Tools</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+    
+<!-- Main Content -->
+<div class="container col-sm-9">
+    <h3 class="my-4 text-white text-center">All in One Bookmark Links for Inspiration</h3>
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <a href="lapa.html">
+                    <img src="https://www.evernote.design/assets/images/lapa.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Lapa Ninja">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Lapa Ninja</h5>
+                    <p class="card-text pt-1">The best landing page design inspiration from around the web. 5800+ landing page examples...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/landing-love.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Landing Love">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Landing Love</h5>
+                    <p class="card-text pt-1">Check out this amazing collection of over 600 animation websites! It's a full video record...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/footer-design.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Footer Design">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Footer Design</h5>
+                    <p class="card-text pt-1">Footer is a curated gallery of the top website footer inspiration on earth. Find the footers...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/rebrand-gallery.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Rebrand Gallery">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Rebrand Gallery</h5>
+                    <p class="card-text pt-1">A collection of the best new design systems, visual identity introductions, and rebrand.</p>
+                </div>
+            </div>
+        </div>
+
+                         <hr class="my-4  border-primary">
+                        <h3 class=" text-white text-center pb-2 sticky-top mt-3 bg-dark">Design news</h3>
+                        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/footer-design.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Footer Design">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Footer Design</h5>
+                    <p class="card-text pt-1">Footer is a curated gallery of the top website footer inspiration on earth. Find the footers...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/rebrand-gallery.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Rebrand Gallery">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Rebrand Gallery</h5>
+                    <p class="card-text pt-1">A collection of the best new design systems, visual identity introductions, and rebrand.</p>
+                </div>
+            </div>
+        </div>
+                <!-- Card 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+                    <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                        <a href="lapa.html">
+                            <img src="https://www.evernote.design/assets/images/lapa.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Lapa Ninja">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Lapa Ninja</h5>
+                            <p class="card-text pt-1">The best landing page design inspiration from around the web. 5800+ landing page examples...</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+                    <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                        <img src="https://www.evernote.design/assets/images/landing-love.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Landing Love">
+                        <div class="card-body">
+                            <h5 class="card-title pt-2">Landing Love</h5>
+                            <p class="card-text pt-1">Check out this amazing collection of over 600 animation websites! It's a full video record...</p>
+                        </div>
+                    </div>
+                </div>
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/landing-love.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Landing Love">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Landing Love</h5>
+                    <p class="card-text pt-1">Check out this amazing collection of over 600 animation websites! It's a full video record...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/footer-design.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Footer Design">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Footer Design</h5>
+                    <p class="card-text pt-1">Footer is a curated gallery of the top website footer inspiration on earth. Find the footers...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/rebrand-gallery.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Rebrand Gallery">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Rebrand Gallery</h5>
+                    <p class="card-text pt-1">A collection of the best new design systems, visual identity introductions, and rebrand.</p>
+                </div>
+            </div>
+        </div>    <!-- Card 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <a href="lapa.html">
+                    <img src="https://www.evernote.design/assets/images/lapa.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Lapa Ninja">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Lapa Ninja</h5>
+                    <p class="card-text pt-1">The best landing page design inspiration from around the web. 5800+ landing page examples...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+            <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+                <img src="https://www.evernote.design/assets/images/landing-love.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Landing Love">
+                <div class="card-body">
+                    <h5 class="card-title pt-2">Landing Love</h5>
+                    <p class="card-text pt-1">Check out this amazing collection of over 600 animation websites! It's a full video record...</p>
+                </div>
+            </div>
+        </div>
+  <!-- Card 2 -->
+  <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-3"> <!-- Added col-6 for small screens -->
+    <div class="bg-dark text-white h-100 p-3" style="max-width: 250px; margin: 0 auto;"> <!-- Set max-width for small screens -->
+        <img src="https://www.evernote.design/assets/images/landing-love.jpg" style="border-radius: 10px;  object-fit: cover;" class="card-img-top rounded image-hover-effect" alt="Landing Love">
+        <div class="card-body">
+            <h5 class="card-title pt-2">Landing Love</h5>
+            <p class="card-text pt-1">Check out this amazing collection of over 600 animation websites! It's a full video record...</p>
+        </div>
+    </div>
+</div>
+
+
+                           
+            </div>
+        </div>
+    
+ 
+
+        
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Bundle with Popper -->
+</script>
+</body>
+</html>
